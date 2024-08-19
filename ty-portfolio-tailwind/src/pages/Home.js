@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaGithub } from 'react-icons/fa'; // Ensure these imports are correct
-
+import tylerimage from '../images/tyler_kimono.JPG'
 const skills = [
   { name: 'React', icon: <FaReact className="text-4xl text-blue-500" /> },
   { name: 'Node.js', icon: <FaNodeJs className="text-4xl text-green-500" /> },
@@ -12,38 +12,38 @@ const skills = [
 const Home = () => {
   return (
     <div className="text-center">
-      {/* Welcome Section */}
  
 
       {/* About Me Section */}
-      <section className="bg-gray-100 py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col items-center md:flex-row md:justify-center md:space-x-8">
+      <section className="relative bg-gray-100 py-16">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundColor: 'white' }}></div>
+        <div className="relative container mx-auto px-4 py-12">
+          <div className="flex flex-col md:flex-row md:space-x-8 items-center">
             {/* Profile Picture */}
-            <div className="mb-8 md:mb-0">
+            <div className="w-full md:w-1/3 mb-8 md:mb-0">
               <img
-                src="https://via.placeholder.com/200" // Replace with your profile picture URL
+                src={tylerimage} // Replace with your profile picture URL
                 alt="Profile"
-                className="w-40 h-40 object-cover rounded-full shadow-lg"
+                className="w-full h-82 object-cover rounded-full shadow-xl border-4 border-white"
               />
             </div>
 
             {/* Text Content */}
-            <div className="md:max-w-lg">
-              <h3 className="text-3xl font-bold mb-4">About Me</h3>
-              <p className="text-lg mb-4">
+            <div className="w-full md:w-2/3">
+              <h3 className="text-4xl font-bold mb-6">About Me</h3>
+              <p className="text-lg mb-6">
                 Hello! I’m a passionate web developer with a strong background in building scalable web applications. 
                 I love creating interactive and user-friendly interfaces using the latest technologies.
               </p>
-              <p className="text-lg mb-6">
+              <p className="text-lg mb-8">
                 With a knack for problem-solving and a keen eye for design, I strive to deliver high-quality solutions 
                 that meet the needs of users and businesses alike.
               </p>
 
               {/* Skills & Achievements */}
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h4 className="text-xl font-semibold mb-3">Skills & Achievements</h4>
-                <ul className="list-disc list-inside text-left">
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <h4 className="text-2xl font-semibold mb-4">Skills & Achievements</h4>
+                <ul className="list-disc list-inside space-y-2">
                   <li>5+ years of experience in web development</li>
                   <li>Proficient in JavaScript, React, Node.js</li>
                   <li>Experienced in building responsive and performant web applications</li>

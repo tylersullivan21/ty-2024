@@ -8,16 +8,7 @@ const Layout = ({ children }) => {
       </header>
 
       {/* Cover Photo */}
-      <section className="relative w-full h-64">
-        <img
-          src="https://via.placeholder.com/1920x400" // Replace with your cover photo URL
-          alt="Cover Photo"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="relative flex items-center justify-center w-full h-full bg-black bg-opacity-30 text-white">
-          <h2 className="text-4xl font-bold">Welcome to My Portfolio</h2>
-        </div>
-      </section>
+     
 
       <main className="flex-grow p-4">
         {children}
