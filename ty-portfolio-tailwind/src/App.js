@@ -1,21 +1,26 @@
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomePage from'./pages/Home'
+
 
 
 const App = () => {
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-      
-        </Routes>
-      </Layout>
+<Router>
+
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+
+      </Routes>
+  
+  
     </Router>
+  
+  
   );
 };
 
