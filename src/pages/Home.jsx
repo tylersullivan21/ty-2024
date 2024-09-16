@@ -17,9 +17,9 @@ const Home = () => {
       <section>
         <About />
       </section>
- {/*   <section className="bg-white h-[500px] flex items-center justify-center pb-20">
+  <section className="bg-white  flex items-center justify-center pb-20">
         <Tyinfo />
-      </section>  */}
+      </section>  
       <section className="bg-white  flex items-center justify-center" >
         <Projects />
       </section>
