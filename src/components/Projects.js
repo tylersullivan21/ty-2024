@@ -1,22 +1,25 @@
 // src/components/Projects.js
 import React from 'react';
-import accrpscreenshot from '../images/accrp.png'; // Correctly import the image
+import accrpscreenshot from '../images/accrp.PNG'; // Correctly import the image
 
 // Sample project data
 const projects = [
   {
     title: 'Alachua County Truth and Reconciliation',
-    description: 'Educates and Informs citizens in Alachua County about Racial Injustice and history that occurred within the County',
+    description: 'Educates and Informs citizens about Racial Injustice and history that occurred within  County',
     image: accrpscreenshot, // Use the image variable directly
     link: 'https://truth.alachuacounty.us/',
-    tech:''
+    tech:'Boostrap 5 (React)',
+    role:'Frontend Dev'
+    
   },
   {
     title: 'Kiosk Remote Dashboard',
-    description: 'A brief description of project 2.',
+    description: 'An internal application that allows apps team to remotely monitor/control active kiosks throughout Alachua County ',
     image: 'https://via.placeholder.com/300',
     link: '',
-    tech:''
+    tech:'Material UI / TailwindCSS',
+    role:'Frontend Dev'
   },
  
   {
@@ -25,6 +28,15 @@ const projects = [
     image: 'https://via.placeholder.com/300',
     link: '#',
     tech: 'Material UI',
+    role:'Frontend Dev'
+  },
+  {
+    title: 'Guardian ad litem',
+    description: 'Come Back and Insert Info about project',
+    image: 'https://via.placeholder.com/300',
+    link: '#',
+    tech: 'Material UI',
+    role:''
   },
  
   // Add more projects as needed
@@ -52,7 +64,11 @@ const Projects = () => {
                 <p className="text-gray-700">{project.description}</p>
               </div>
               <div className="pl-6 pb-6" >
-              <p className="text-gray-700 ">{project.tech}</p>
+              <p className="text-gray-700 font-bold ">{project.tech}</p>
+              </div>
+              <div className="pl-6 pb-6" >
+                <p className='text-gray-700 font-bold '>Role:</p>
+              <p className="text-gray-700  underline decoration-1"> {project.role}</p>
               </div>
             </div>
           </a>

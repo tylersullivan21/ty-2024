@@ -8,7 +8,7 @@ const About = () => {
       <div className="flex flex-col items-center justify-center space-y-4">
         <div className="text-center space-y-2">
           <h2 className="text-4xl font-bold">Hi There I'm Tyler</h2>
-          <h5 className="text-xl">I'm a front end developer located in Florida USA</h5>
+          <h5 className="text-xl">I'm an aspring Full-Stack developer located in Florida</h5>
         </div>
         <img
           src={tyimage}
