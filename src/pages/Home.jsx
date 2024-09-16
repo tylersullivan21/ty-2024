@@ -21,12 +21,13 @@ const Home = () => {
   <section className="bg-white  flex items-center justify-center py-16 ">
         <Tyinfo />
       </section>  
-      <section className="bg-#f9e4bc  flex items-center justify-center py-16" >
-        <Projects />
-      </section>
-      <section className="bg-white  flex items-center justify-center py-16" >
+      <section className="bg-#f9e4bc   flex items-center justify-center py-16" >
         <Skills/>
       </section>
+      <section className="bg-white flex items-center justify-center py-16" >
+        <Projects />
+      </section>
+      
       <section className="bg-white  flex items-center justify-center " >
         <Footer/>
       </section>

@@ -66,7 +66,7 @@ const InfoAndTimeline = () => {
               I am always eager to take on new challenges and continually improve my craft.
             </p>
             <p className="text-gray-700 mb-4">
-              When I am not coding, you can find me exploring the latest tech trends, reading, or spending time outdoors.
+            When I'm not coding, I like to travel, take pictures, and recently have gotten into Weight Lifting.
             </p>
             {/* Add more information or sections as needed */}
           </div>

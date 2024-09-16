@@ -6,54 +6,51 @@ import accrpscreenshot from '../images/accrp.PNG'; // Correctly import the image
 const projects = [
   {
     title: 'Alachua County Truth and Reconciliation',
-    description: 'Educates and Informs citizens about Racial Injustice and history that occurred within  County',
+    description: 'Educates and Informs citizens about Racial Injustice and history that occurred within County',
     image: accrpscreenshot, // Use the image variable directly
     link: 'https://truth.alachuacounty.us/',
-    tech:'Boostrap 5 (React)',
-    role:'Frontend Dev'
-    
+    tech: 'Bootstrap 5 (React)',
+    role: 'Frontend Dev',
   },
   {
     title: 'Kiosk Remote Dashboard',
-    description: 'An internal application that allows apps team to remotely monitor/control active kiosks throughout Alachua County ',
+    description: 'An internal application that allows the apps team to remotely monitor/control active kiosks throughout Alachua County',
     image: 'https://via.placeholder.com/300',
     link: '',
-    tech:'Material UI / TailwindCSS',
-    role:'Frontend Dev'
+    tech: 'Material UI / TailwindCSS',
+    role: 'Frontend Dev',
   },
- 
   {
     title: 'WeatherStem Dashboard',
-    description: 'A dashboard that aggregates weatherstem data from 7 locations throughout Alachua County. Dashboard is displayed on a wall at the Alachua County Emergency Operations Center',
+    description: 'A dashboard that aggregates WeatherStem data from 7 locations throughout Alachua County. Dashboard is displayed on a wall at the Alachua County Emergency Operations Center',
     image: 'https://via.placeholder.com/300',
     link: '#',
     tech: 'Material UI',
-    role:'Frontend Dev'
+    role: 'Frontend Dev',
   },
   {
-    title: 'Guardian ad litem',
+    title: 'Guardian ad Litem',
     description: 'Come Back and Insert Info about project',
     image: 'https://via.placeholder.com/300',
     link: '#',
     tech: 'Material UI',
-    role:''
+    role: '',
   },
- 
   // Add more projects as needed
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-16">
-      <h2 className="text-4xl font-bold text-center mb-12">Projects that I have Contributed to</h2>
-      <div className="flex flex-wrap justify-center gap-12">
-        {projects.map((project, index) => (
-          <a
-            href={project.link}
-            key={index}
-            className="w-full sm:w-11/12 md:w-1/2 lg:w-1/3 xl:w-1/4 max-w-lg"
-          >
-            <div className="bg-white shadow-xl rounded-lg overflow-hidden">
+    <section id="projects" className="py-16 ">
+      <h2 className="text-4xl font-bold text-center mb-12">Projects I Have Contributed To</h2>
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {projects.map((project, index) => (
+            <a
+              href={project.link}
+              key={index}
+              className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+            >
               <img
                 src={project.image}
                 alt={project.title}
@@ -61,18 +58,16 @@ const Projects = () => {
               />
               <div className="p-6">
                 <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
-                <p className="text-gray-700">{project.description}</p>
+                <p className="text-gray-700 mb-2">{project.description}</p>
+                <p className="text-gray-700 font-bold">{project.tech}</p>
+                <div className="mt-2">
+                  <p className="text-gray-700 font-bold">Role:</p>
+                  <p className="text-gray-700">{project.role}</p>
+                </div>
               </div>
-              <div className="pl-6 pb-6" >
-              <p className="text-gray-700 font-bold ">{project.tech}</p>
-              </div>
-              <div className="pl-6 pb-6" >
-                <p className='text-gray-700 font-bold '>Role:</p>
-              <p className="text-gray-700  underline decoration-1"> {project.role}</p>
-              </div>
-            </div>
-          </a>
-        ))}
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );
