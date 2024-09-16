@@ -7,7 +7,7 @@ import tyhorse from '../images/ty-knighto.jpg';
 
 const About = () => {
   return (
-    <section className="pb-16" id='about'>
+    <section className="" id='about'>
       <div className="flex flex-col items-center justify-center space-y-4">
         <div className="text-center space-y-2">
           <h2 className="text-4xl font-bold">Hi There I'm Tyler</h2>

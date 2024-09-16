@@ -11,23 +11,23 @@ import Skills from '../components/Skills';
 
 const Home = () => {
   return (
-    <main className="space-y-20">
+    <main className="">
       <header className="bg-gray-100">
         <Header />
       </header>
-      <section>
+      <section className='py-16'>
         <About />
       </section>
-  <section className="bg-white  flex items-center justify-center pb-20">
+  <section className="bg-white  flex items-center justify-center py-16 ">
         <Tyinfo />
       </section>  
-      <section className="bg-white  flex items-center justify-center" >
+      <section className="bg-#f9e4bc  flex items-center justify-center py-16" >
         <Projects />
       </section>
-      <section className="bg-white  flex items-center justify-center" >
+      <section className="bg-white  flex items-center justify-center py-16" >
         <Skills/>
       </section>
-      <section className="bg-white  flex items-center justify-center" >
+      <section className="bg-white  flex items-center justify-center " >
         <Footer/>
       </section>
     </main>
