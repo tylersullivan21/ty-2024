@@ -7,6 +7,7 @@ import About from '../components/About';
 import Header from '../components/Header';
 import Projects from '../components/Projects';
 import Footer from '../components/Footer';
+import Skills from '../components/Skills';
 
 const Home = () => {
   return (
@@ -22,6 +23,9 @@ const Home = () => {
       </section>  
       <section className="bg-white  flex items-center justify-center" >
         <Projects />
+      </section>
+      <section className="bg-white  flex items-center justify-center" >
+        <Skills/>
       </section>
       <section className="bg-white  flex items-center justify-center" >
         <Footer/>
