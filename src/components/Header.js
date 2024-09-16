@@ -1,26 +1,21 @@
 // src/components/Header.js
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button, Container, Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    
-  
-        <Grid container xs={12}  justifyContent='space-around' paddingTop='2%' paddingBottom='3%'>
-            <Grid item>
-          <Typography variant="h6" component="div">
-            Ty Logo
-          </Typography>
-          </Grid>
-          <Grid item >
-          <Button style={{fontSize:'24px'}} color="inherit" component={Link} to="/">Home</Button>
-          <Button style={{fontSize:'24px'}} color="inherit" component={Link} to="/about">About</Button>
-          <Button style={{fontSize:'24px'}} color="inherit" component={Link} to="#projects">Projects</Button>
-          </Grid>
-        </Grid>
-     
- 
+    <header className="bg-gray-800 text-white py-4">
+      <div className="container mx-auto flex items-center justify-between">
+        <div className="text-xl font-semibold">
+          Ty Logo
+        </div>
+        <nav className="space-x-6">
+          <Link to="/" className="text-xl hover:text-gray-400">Home</Link>
+          <Link to="/about" className="text-xl hover:text-gray-400">About</Link>
+          <Link to="#projects" className="text-xl hover:text-gray-400">Projects</Link>
+        </nav>
+      </div>
+    </header>
   );
 };
 

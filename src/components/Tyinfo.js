@@ -1,27 +1,16 @@
-// src/components/Home.js
+// src/components/Tyinfo.js
 import React from 'react';
-import { Container, Grid, Typography, Box, Button } from '@mui/material';
-import { Link } from 'react-router-dom';
-import tyimage from'../images/tyler.jpg'
+
 const Tyinfo = () => {
   return (
- <section>
-
-<Grid container xs={12}  justifyContent='center'>
-        
-        <Grid container item xs={10} sm={6} pt={4}  flexDirection='column' textAlign='center' justifyContent='center' alignContent='center' >
-    <Typography variant='h4' pb={2}>
-Hi There I'm Tyler
-    </Typography>
-    <Typography variant='h6'>
-I have been working professionally as a Programmer/Analyst at some capacity for over the past 6 years in Alachua County. My daily I have been working professionally as a Programmer/Analyst at some capacity for over the past 6 years in Alachua County. My daily 
-    </Typography>
-   
-
-        </Grid>
-
-    </Grid>
- </section>
+    <section className="flex justify-center">
+      <div className="flex flex-col items-center justify-center text-center p-4 max-w-3xl mx-auto">
+        <h4 className="text-3xl font-semibold mb-2">Hi There I'm Tyler</h4>
+        <h6 className="text-lg">
+          I have been working professionally as a Programmer/Analyst at some capacity for over the past 6 years in Alachua County. My daily routine includes...
+        </h6>
+      </div>
+    </section>
   );
 };
 

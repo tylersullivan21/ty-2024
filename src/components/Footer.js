@@ -1,15 +1,14 @@
 // src/components/Footer.js
 import React from 'react';
-import { Container, Typography } from '@mui/material';
 
 const Footer = () => {
   return (
-    <footer>
-      <Container>
-        <Typography variant="body2" color="textSecondary" align="center">
+    <footer className="bg-gray-800 text-white py-4">
+      <div className="container mx-auto text-center">
+        <p className="text-sm">
           © 2024 My Portfolio. All rights reserved.
-        </Typography>
-      </Container>
+        </p>
+      </div>
     </footer>
   );
 };
