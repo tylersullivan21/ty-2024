@@ -19,9 +19,9 @@ const App = () => {
       </Routes>
   
   
-    </Router>
-  
-  
+    </Router> 
+
+ 
   );
 };
 
