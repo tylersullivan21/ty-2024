@@ -5,7 +5,7 @@ const timelineEvents = [
 
   {
     date: 'October 2023',
-    title: 'Senior Programmer/Analyst Postion Promotion',
+    title: 'Senior Programmer/Analyst Postion',
     description: 'Promoted into the Programmer/Analyst Positon',
     icon: '🚀',
   },
